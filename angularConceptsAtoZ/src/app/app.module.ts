@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KitchenSinkComponent } from './kitchen-sink/kitchen-sink.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { KitchenSinkComponent } from './kitchen-sink/kitchen-sink.component';
     AppRoutingModule,
     MatListModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
