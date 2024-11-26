@@ -7,21 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KitchenSinkComponent } from './kitchen-sink/kitchen-sink.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DynamicImportComponent } from './dynamic-import/dynamic-import.component';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
-    KitchenSinkComponent,
-    DynamicImportComponent
+    KitchenSinkComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    BrowserAnimationsModule
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
