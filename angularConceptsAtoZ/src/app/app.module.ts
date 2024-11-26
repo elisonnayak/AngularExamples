@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KitchenSinkComponent } from './kitchen-sink/kitchen-sink.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DynamicImportComponent } from './dynamic-import/dynamic-import.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KitchenSinkComponent
+    KitchenSinkComponent,
+    DynamicImportComponent
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,20 @@
 <mat-card>
     <mat-card-header>
       <mat-card-title>Dynamic import</mat-card-title>
-      <mat-card-subtitle>Dynamic import helps to load some components dynamically.</mat-card-subtitle>
+      <mat-card-subtitle>Dynamic import helps to load some components dynamically. This is a way to lazy load a component.</mat-card-subtitle>
     </mat-card-header>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button [routerLink]="['dynamicImport']" [skipLocationChange]="true">Demo</button>
     </mat-card-actions>
   </mat-card>
   <br>
   <mat-card>
     <mat-card-header>
-      <mat-card-title>Actions Buttons</mat-card-title>
-      <mat-card-subtitle>End</mat-card-subtitle>
+      <mat-card-title>Router based lazy loading.</mat-card-title>
+      <mat-card-subtitle>This is another way to lazy load a component associated with a route.</mat-card-subtitle>
     </mat-card-header>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button routerLink="/routerLazyload">Demo</button>
     </mat-card-actions>
   </mat-card>
   
