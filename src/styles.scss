@@ -1,4 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @use '@angular/material' as mat;
+@import '@angular/material/theming';
+@include mat.core();
+
+$app-primary: mat.define-palette(mat.$indigo-palette);
+$app-accent: mat.define-palette(mat.$indigo-palette);
+
+$app-warn: mat.define-palette(mat.$red-palette, 900);
+
+$app-theme: mat.define-light-theme($app-primary, $app-accent, $app-warn);
+
+@include mat.all-component-themes($app-theme);
+
+$sansserif-typography: mat.define-typography-config(
+  $font-family: sans-serif
+);
+@include mat.all-component-typographies($sansserif-typography);
+
+// Custom style for my anchor elements
+a {
+  color: mat-color($app-accent);
+  cursor: pointer;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container{
+    max-width: 1000px;
+    height: fit-content;
+    margin: auto;
+    border: 1px dashed burlywood;
+}

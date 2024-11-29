@@ -6,3 +6,17 @@
 .mat-drawer {
     width: 450px !important;
 }
+
+.list-display{
+    display: flex;
+    flex-direction: row;
+}
+
+.mdc-list-item.mdc-list-item--with-three-lines{
+    height: 100px !important;
+}
+
+.mdc-list-item__secondary-text{
+    overflow: initial !important;
+    text-overflow: initial !important;
+}

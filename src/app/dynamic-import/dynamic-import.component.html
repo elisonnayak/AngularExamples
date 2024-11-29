@@ -1,1 +1,20 @@
-<p>dynamic-import works!</p>
+<!-- p>{{appName}}</p> -->
+<div class="container">
+<mat-tab-group animationDuration="0ms" [selectedIndex]="1" style="padding-bottom: 50px;">
+    <mat-tab label="Java">
+        Java code goes here..
+    </mat-tab>
+    <mat-tab label="JavaScript">
+        <div style="display: flex; flex-direction: column;">
+        <span>
+            {{selectedTopic.description}}
+        </span>
+        <b>Examples:</b>
+            <a *ngFor="let example of selectedTopic.examples">
+                <span (click)="accessExample(example.exampleId)">{{example.exampleName}}</span>
+            </a>
+        </div>
+    </mat-tab>
+  </mat-tab-group>
+  <div id="embedStackBlitz"></div>
+</div>
