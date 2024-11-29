@@ -14,13 +14,13 @@ export class DynamicImportComponent implements OnInit{
   selectedTopic!: any;
   constructor(private changeDetectorRef: ChangeDetectorRef){}
 
-  async accessExample(projectName: string): Promise<void>{
+  async accessExample(projectName: string, fileName: string): Promise<void>{
     await sdk.embedProjectId(
         'embedStackBlitz',
         projectName,
       {
         forceEmbedLayout: true,
-        openFile: 'src/counter.js',
+        openFile: fileName,
         view: 'default',
         hideNavigation: true,
         hideDevTools: true,

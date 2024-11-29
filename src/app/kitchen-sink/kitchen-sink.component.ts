@@ -3,7 +3,7 @@ interface Topic {
   topicId: number,
   title: string,
   description: string,
-  examples: Array<{exampleName: string,exampleId: string}>,
+  examples: Array<{exampleName: string,exampleId: string,fileName: string}>,
   type: string
 }
 @Component({
@@ -30,16 +30,16 @@ export class KitchenSinkComponent{
       "examples": [
         {
           'exampleName': 'Dynamic Import',
-          'exampleId': ''
-
+          'exampleId': '',
+          'fileName': ''
         }, {
           'exampleName': 'Example 2',
-          'exampleId': ''
-
+          'exampleId': '',
+          'fileName': ''
         }, {
           'exampleName': 'Example 3',
-          'exampleId': ''
-
+          'exampleId': '',
+          'fileName': ''
         }
       ],
       "type":"angular"
@@ -52,16 +52,16 @@ export class KitchenSinkComponent{
       "examples": [
         {
           'exampleName': 'Prefix Sum Pattern',
-          'exampleId': 'vitejs-vite-vuzidy'
-
+          'exampleId': 'vitejs-vite-vuzidy',
+          'fileName': 'src/counter.js'
         }, {
-          'exampleName': 'Example 2',
-          'exampleId': ''
-
+          'exampleName': 'Equilibrium Index',
+          'exampleId': 'vitejs-vite-vuzidy',
+          'fileName': 'src/equilibriumIndex.js'
         }, {
           'exampleName': 'Example 3',
-          'exampleId': ''
-
+          'exampleId': '',
+          'fileName': ''
         }
       ],
       "type": "dsa"
