@@ -13,7 +13,7 @@
       <mat-list-item lines="3" class="list-display" *ngFor="let topic of listOfTopics">
         <span matListItemTitle>{{topic.title}}</span>
         <span>
-          {{topic.description}}
+          {{topic.shortDescription}}
         </span>
         <button mat-button (click)="openTopic(topic.topicId)">Demo</button>
       </mat-list-item>

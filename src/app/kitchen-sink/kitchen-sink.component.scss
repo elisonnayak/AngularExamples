@@ -12,8 +12,13 @@
     flex-direction: row;
 }
 
+
 .mdc-list-item.mdc-list-item--with-three-lines{
-    height: 100px !important;
+    position: relative;
+    height: auto;
+    overflow-y: scroll;
+    min-height: 100px;
+    //background-color: #e1e1e1;
 }
 
 .mdc-list-item__secondary-text{
