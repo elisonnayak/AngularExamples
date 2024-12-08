@@ -1,0 +1,105 @@
+{
+    "data": [
+        {
+            "topicId": 100,
+            "title": "Prefix and Suffix Sum Pattern",
+            "shortDescription": "Prefix and suffix sum provides the arrays having sum at each index in forward anf backward direction",
+            "description": "This represent a pattern to derive an array of elements with summation data at each index equals to sum of current value and previous value.",
+            "examples": [
+                {
+                    "exampleName": "Prefix Sum Pattern",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/prefixSuffixSum.js"
+                },
+                {
+                    "exampleName": "Suffix Sum Pattern",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/prefixSuffixSum.js"
+                },
+                {
+                    "exampleName": "Equilibrium Index",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/equilibriumIndex.js"
+                },
+                {
+                    "exampleName": "Example 3",
+                    "projectId": "",
+                    "fileName": ""
+                }    
+            ],
+            "type": "dsa"
+        },
+        {
+            "topicId": 101,
+            "title": "Two pointers pattern",
+            "shortDescription": "Two pointers pattern provides value at first and last index. The index positions will change based on condition.",
+            "description": "Provided a sorted array in ascending order. Initialize two indices, one pointing the first element in the array and another to the last element. Find sum of elements for both pointers. Move the left pointer to right if the sum is less than target sum. Simillarly move the right pointer to left if the sum is greater than the target sum.",
+            "examples": [
+                {
+                    "exampleName": "Find the indices of two elements which sum equal to a target sum",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/twoPointersPattern.js"
+                },
+                {
+                    "exampleName": "Example 2",
+                    "projectId": "",
+                    "fileName": ""
+                },
+                {
+                    "exampleName": "Example 3",
+                    "projectId": "",
+                    "fileName": ""
+                }
+            ],
+            "type": "dsa"
+        },
+        {
+            "topicId": 102,
+            "title": "Fast and slow pointers pattern",
+            "shortDescription": "As the name suggest this pattern has two pointers in a linkedlist.",
+            "description": "Also knows and Hare and Tortoise algorithm moves two pointer in a linked list in different nodes. One skipping the nodes as required the other one follwoing the first with no skipping nodes. Eventually both the pointers will determine a cycle or the fast pointer will reach to the end where as the slow pointer is at the middle node. With this many of these linkedlist solutions can be provided.",
+            "examples": [
+                {
+                    "exampleName": "Find is the linked list has a cycle",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/fastAndSlowPointer.js"
+                },
+                {
+                    "exampleName": "Find the middle node of the linked list",
+                    "projectId": "",
+                    "fileName": ""
+                },
+                {
+                    "exampleName": "Example 3",
+                    "projectId": "",
+                    "fileName": ""
+                }
+            ],
+            "type": "dsa"
+        },  
+        {
+            "topicId": 103,
+            "title": "Sliding window pattern",
+            "shortDescription": "This pattern has a fixed size subarray to calculate average of a fixed size array, target value of a subarray etc.",
+            "description": "This is done by maintaining a sliding window, which is a subarray of the original array that is of a fixed size. The algorithm then iterates over the original array, updating the sliding window as it goes. This allows the algorithm to keep track of a contiguous sequence of elements in the original array, without having to iterate over the entire array multiple times.",
+            "examples": [
+                {
+                    "exampleName": "Maximum average of a fixed size subarray",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/slidingWindowPattern.js"
+                },
+                {
+                    "exampleName": "TBD",
+                    "projectId": "",
+                    "fileName": ""
+                },
+                {
+                    "exampleName": "Example 3",
+                    "projectId": "",
+                    "fileName": ""
+                }
+            ],
+            "type": "dsa"
+        }
+    ]
+}
