@@ -22,6 +22,7 @@ export class KitchenSinkComponent{
   private dynamicComponentTemplate!: ViewContainerRef;
 
   showFiller = false;
+  hideSpaceholder = false;
   component: any;
   intialListOfTopics: Array<Topic> = allExampleData?.data?.sort((a:any,b:any) => a.topicId - b.topicId);
   listOfTopics: Array<Topic> = [...this.intialListOfTopics];

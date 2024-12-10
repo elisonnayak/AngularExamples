@@ -89,12 +89,36 @@
                     "fileName": "src/slidingWindowPattern.js"
                 },
                 {
-                    "exampleName": "TBD",
+                    "exampleName": "TBD1",
                     "projectId": "",
                     "fileName": ""
                 },
                 {
-                    "exampleName": "Example 3",
+                    "exampleName": "TBD2",
+                    "projectId": "",
+                    "fileName": ""
+                }
+            ],
+            "type": "dsa"
+        },
+        {
+            "topicId": 104,
+            "title": "Linked list In-place reversal",
+            "shortDescription": "Reverse part of linked list",
+            "description": "This pattern is used to reverse part of linked list without using any extra space.",
+            "examples": [
+                {
+                    "exampleName": "Reverse a sublist of a linked list from position m to n. ",
+                    "projectId": "vitejs-vite-vuzidy",
+                    "fileName": "src/linkedListInplaceReversal.js"
+                },
+                {
+                    "exampleName": "TBD1",
+                    "projectId": "",
+                    "fileName": ""
+                },
+                {
+                    "exampleName": "TBD2",
                     "projectId": "",
                     "fileName": ""
                 }

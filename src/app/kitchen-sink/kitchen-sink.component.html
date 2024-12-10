@@ -1,7 +1,5 @@
-
-
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer mode="side" disableClose="false">
+  <mat-drawer #drawer mode="side" disableClose="false" [opened]="true">
     <mat-chip-listbox aria-label="Technology selection" (change)="selectedTech($event)">
       <mat-chip-option selected>All</mat-chip-option>
       <mat-chip-option>DSA</mat-chip-option>
@@ -15,7 +13,7 @@
         <span>
           {{topic.shortDescription}}
         </span>
-        <button mat-button (click)="openTopic(topic.topicId)">Demo</button>
+        <button mat-button (click)="openTopic(topic.topicId);hideSpaceholder=true;">Demo</button>
       </mat-list-item>
     </mat-list>
   </mat-drawer>
@@ -25,5 +23,10 @@
       {{drawer.opened ? 'Close' : 'Open'}}
     </button>
     <ng-template #dynamicComponentTemplate></ng-template>
-    </div>
+  </div>
+  <div class="homepage_container" *ngIf="!hideSpaceholder">
+    This is a placeholder space to render details about a topic. Click DEMO button for a specific topic in the left navigation to load in this space.
+  </div>
+
 </mat-drawer-container>
+
