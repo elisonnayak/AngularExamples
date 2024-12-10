@@ -16,7 +16,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Demo
 
+Home page demo:
 ![Alt text](./demo/demohomepage.png?raw=true "Homepage")
+
+Accessing a particular topic:
+![Alt text](./demo/demorendercomponent.png?raw=true "Accessing a component")
 
 ## Running unit tests
 
